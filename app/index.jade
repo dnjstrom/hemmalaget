@@ -3,7 +3,7 @@ include mixins
 doctype html
 html(lang='sv')
 	head
-		title Hemmalaget
+		title Gryningsljus AB
 		meta(charset='UTF-8')
 		meta(name='viewport' content='width=device-width' initial-scale=1 maximum-scale=1 user-scalable='no')
 		link(rel='stylesheet' href='vendor.css')
@@ -19,66 +19,90 @@ html(lang='sv')
 
 		main
 			section#header
-				h1.title Personlig assistans<br /> på dina villkor
+				h1.title Gryningsljus AB
+			
+			section.main
+				p.copy Gryningsljus är en nystartad hvb-verksamhet med en familjär atmosfär för 9 ungdomar. Vår målgrupp är ensamkommande asylsökande pojkar mellan 14 - 18 år samt pojkar som erhållit permanent uppehållstillstånd. 
+				p.copy Vi planerar att ta emot ungdomar under juli månad. Vi väntar förnärvarande på tillstånd från Inspektionen för vård och omsorg.
+
+				h3 Kvalitet
+				p.copy Kvalitet för oss är att uppfylla uppdragsgivarnas krav, behov och förväntningar. De mest kostnadseffektiva processerna uppstår om man gör rätt från början och har en tydlig rollfördelning. Vi på Gryningsljus ser det som angeläget att arbeta "nära" våra uppdragsgivare.
+				
+				h3 Personlig inloggning
+				p.copy Gryningsljus erbjuder ansvarig handläggare en personlig inloggning in i vårat journalsystem. Syftet med detta är att ansvarig handläggare på ett enkelt sätt ska kunna följa placeringens utveckling samt för att skapa förutsättning för en god kommunikation mellan socialtjänst och boende. 
+				
+				p.copy Tveka inte att ta kontakt om du är socialsekreterare eller god man 
+				p.copy Föreståndare Fredrik Danielsson 
+
+				a.copy(href='tel:+46708141001') 0708 – 14 10 01
+				<br />
+				a.copy(href='mailto:fredrik@gryningsljus.se') fredrik@gryningsljus.se
 			
 			
-			section#pledge
-				+testimonial("per-arne.png",
-				"Hemmalaget är det personliga assistansbolaget som sätter dig och dina behov i fokus. Tillsammans ser vi till att du får den hjälp som du vill ha, utan onödigt krångel.",
-				"Per-Arne, VD")
+			section#facilities
+				h2 Vårt boende
+
+				p.copy Ligger centralt belägget i Floby, Falköpings kommun. Närheten till kollektivtrafik gör det enkelt för våra ungdomar för att resa och bekanta sig med närområdet. Det finns även dagliga förbindelser till både Skövde och Göteborg etc. vilket möjliggör goda förutsättningar för våra ungdomar att skapa ett socialt kontaktnät utanför boendet. Att Gryningsljus finns belägget på landet innebär att vi har ett stort utbud av fritidsaktiviteter under sommaren. Närheten till bad- och fiskesjöar och inte minst Hornborgarsjön skapar fantastiska möjligheter till ett aktivt fritidsliv. Under vintertid kommer våra ungdomar att möjlighet att prova på utförsåkning i närliggande miljöer avsedda för detta. 
+				p.copy För oss är det viktigt att ungdomarna ska kunna prata sitt modersmål med personalen. Därför har vi personal som både pratar dari, persiska, somaliska, turkiska och syrianska.
+				p.copy Gryningsljus är ett fristående HVB för ensamkommande flyktingungdomar. Vi erbjuder ett helt nybyggt boende med aktiviteter och meningsfull tillvaro med personal som brinner för att skapa en professionell relation och guida mot en god start och fortsatt liv i Sverige. 
+				p.copy Med enbart nio platser och hög personaltäthet erbjuds varje ungdom mycket tid och omsorg där vi kan skapa förståelse för det sammanhang den unge befinner sig i. För oss är hög grad av KASAM en viktig nyckel i att skapa trygghet. I personalgruppen finns det kunskap kring det salutogena perspektivet. 
+				
+				h3 Våra målsättningar är:
+
+				ul.copy
+					li Att för våra ensamkommande ungdomar vara ett boende med stor möjlighet till individuell utveckling och aktivt integrationsarbete där de trivs och möts med respekt och värdighet.
+					li Att ha nöjda uppdragsgivare genom att vara en tydlig och attraktiv samarbetspartner som står för omsorg av hög kvalitet.
+					li Att för vår personal vara en attraktiv arbetsgivare med bra bemanning, rätt kompetens och utvecklingsinriktat ledarskap där varje medarbetare kan utvecklas och påverka arbetet.
 			
-			
-			section#regions
-				h2 Västra Götaland
-				p Sedan 2011 bedriver Hemmalaget Assistans AB verksamhet inom personlig assistans i Västra Götalandsregionen.
-			
-			section#offer
-				h2 Vi erbjuder
-				img(src="cloud.png", alt="Vårt erbjudande")
-				.articles
-					+articles(offer)
-					a#contact_us(href='mailto:info@hemmalaget.se?subject=Bli kund hos Hemmalaget!')
-						#image(role="img" aria-label="Vi hjälper dig! Kontakta oss!")
-							
-			
-			section#testimonial.testimonial
-				+testimonial("client.png",
-				"Vi kompletterar varandra, min assistent och jag.",
-				"Andreas")
-			
-			
-			section#join
-				h2 Vill du bli en del av Hemmalaget?
-				p.intro.
-					Vi är måna om att erbjuda hög service till både kunder och anställda
-					eftersom vi vet att bra personliga assistenter är en förutsättning för bra
-					personlig assistans. Därför vill vi vara en riktigt bra arbetsgivare och
-					arbeta för goda relationer med varje medarbetare. Vi vill att du ska trivas
-					och stanna hos oss!
-				.articles
-					+articles(join)
-			
-			
-			section#testimonial2.testimonial
-				+testimonial("assistant.png",
-				"Det är underbart att få göra skillnad i en människas liv.",
-				"Susanne, Assistent")
-			
+				img.copy(src="floby.png", alt="Bilder från Floby.")
+				
+
+			section#operation
+				h2 Vår verksamhet
+				img.copy(src="ledord.png", alt="Vårt erbjudande")
+				
+				p.copy Verksamheten tar emot barn och ungdomar för att erbjuda boende, integration och omsorg. Detta görs genom att verksamheten tillhandahåller en stabil struktur och samtal vilandes på en miljöterapeutisk grund. Ett av verksamhetens primära mål är att den unge ska känna sig trygg i hemmamiljön. Tryggheten skapas genom tydlig vardagsstruktur och goda vuxna förebilder. En tydlig och strukturerad miljö bidrar till att den unge kan fokusera på sig själv och det som för den enskilde är viktigt, till exempel utbildning och en meningsfull fritid.
+				p.copy Föreståndare ansvarar för att arbete sker utifrån barnens behov i centrum, BBIC. Detta innebär bland annat att vi erbjuder individuellt stöd i identitetsprocessen. Verksamheten upprättar individuella genomförandeplaner för de boende. Detta gör verksamheten i samverkan med den unge, god man/ställföreträdande vårdnadshavare samt placerande socialtjänst. Genomförandeplanen utgår ifrån BBIC och är ett viktigt redskap i arbetet med att rusta den unge för ett självständigt liv i det svenska samhället.
+				p.copy Den unges vecka planeras utifrån ett veckoschema i syfte att strukturera vardagen. Verksamheten ansvarar för schemats upprättande i samverkan mellan kontaktperson och den unge utifrån dennes förutsättningar och behov. Städning, handling, skola, samtal, möten och fritidsaktiviteter är exempel på vad veckan kan innehålla. Verksamheten ansvarar för att kontaktperson och den unge planerar i samverkan tid för veckosamtal för uppföljning av föregående vecka samt planering för kommande. I samtalet har ungdomarna möjlighet att ta upp önskemål på aktiviteter eller komma med klagomål eller förslag på förbättringar.
+
+				h3 För oss innebär ett miljöterapeutiskt perspektiv
+
+				ul.copy
+					li Öppen kommunikation. Kommunikationen ska vara öppen i alla riktningar.
+					li Demokrati. Medbestämmande.
+					li Den unge stöttas i att aktivt lära och utvecklas.
+					li Vardagssituationer utnyttjas i integrationssyfte.
+					li Personalen och den unge samverkar på alla plan mot gemensamma mål.
+					li Boendet får inte vara en isolerad ö; verksamheten måste bedrivas i ständig kontakt med samhället och människor utanför.
+				
+				
+			section#staff
+				h2 Vår personal
+				p.copy Större delen av personalen har lång erfarenhet av att arbeta med ensamkommande barn och ungdomar. Vissa har upp till 20 års erfarenhet av socialt arbete kopplat till barn och unga. Personalgruppen är sammansatt så att den speglar samhället då vår utgångspunkt är att detta skapar goda förutsättningar för trygghet och integration. Detta innebär att personalgruppen tillsammans har en bred kulturell kompetens utifrån olika bakgrund och kunskap om flyktingskap och migration. Kunskapen skapar möjlighet att särskilja vad i ungdomens beteende som är kulturellt betingat och vad som är individuellt. I personalgruppen ingår utbildningar som behandlingspedagog, fritidsledare och undersköterska. Vi har en hög personaltäthet och förstärker vid behov för att skapa en trygg och säker boendemiljö. Vår personal har regelbundna möten och handledning i syfte att stärka teamet. Med ledorden närvaro och relation i vårt pedagogiska förhållningssätt kan vi möta problem med tidiga lösningar och hjälpa ungdomarna fram till egna lösningar  som är bra för dem och deras situation.
+				p.copy Vi väljer vår personal med stor omsorg och vill att de ska fungera som förebilder för våra ungdomar. Tack vare en sammansvetsad personalgrupp med mångårig erfarenhet kan vi ta emot ungdomar som behöver mycket stöd och omsorg.
+				img.center(src="ubuntu.png", alt="Gemenskap och sammarbete" style="width: 300px")
+
+
+			section#partners
+				h2 Samarbetspartners
+				p.copy Gryningsljus samarbetar med socionom Eva-Stina Premberg. Eva-Stina har mångårig erfarenhet av att arbeta som verksamhetschef, sektionschef samt chefskonsult inom familj- och individomsorg
+				p.copy Gryningsljus samarbetar med Rosanne Macke Alström, Legitimerad psykoterapeut och handledare. Certifierad EMDR-terapeut för vuxna och barn. Specialiserad inom bl. a. traumabehandling och har erfarenhet av psykoterapeutisk behandling av flyktingar, krigs- och tortyrskadade, vuxna, ungdomar och familjer sedan 2008.
+
 			
 			section#we_at
-				h2 Vi på Hemmalaget
+				h2 Vi på Gryningsljus
 				each contact in locals.contacts
 					+contactCard(contact)
 			
 			
-			section#partners
+			section#affiliates
 				p I sammarbete med:
 				#logos
 					a.kfo(href='https://www.kfo.se')
 						img(src="kfo.png", alt="Arbetsgivarföreningen KFO")
 					a.aiai(href='https://www.aiai.se')
 						img(src="aiai.png", alt="Administrationsverktyget AIAI")
-				p Vi innehar tillstånd från Inspektionen för Vård och Omsorg
+				p Vi inväntar tillstånd från Inspektionen för Vård och Omsorg
 			
 			
 			section#contact
@@ -91,16 +115,7 @@ html(lang='sv')
 					
 					a.address(href='https://www.google.se/maps/place/Klockareg%C3%A5rdsv%C3%A4gen+9,+441+35+Alings%C3%A5s/@57.9387194,12.546462') Klockaregårdsvägen 9<br/>441 35 Alingsås
 			
-			section#attribution
-				a(href="https://www.linkedin.com/in/dnjstrom" target="_blank") Built with <span class="heart">❤</span> by Daniel Ström
-		
-		script(type='text/javascript').
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-65451616-1', 'auto');
-			ga('send', 'pageview');
+			//- section#attribution
+			//- 	a(href="https://www.linkedin.com/in/dnjstrom" target="_blank") Built with <span class="heart">❤</span> by Daniel Ström
 			
 		script(type'text/javascript') require("main");

@@ -21,9 +21,24 @@ body
 section
 	center(1024px)
 	background white
-	padding 2rem 1rem
+	padding 2rem 4rem
 	overflow hidden
 	cf()
+	+below(tablet)
+		padding 1rem 2rem
+
+.copy
+	+above(tablet)
+		padding-left 2rem
+		padding-right 2rem
+p.copy
+	+above(tablet)
+		padding-left 2rem
+		padding-right 2rem
+ul.copy
+	+above(tablet)
+		padding-left 4rem
+		padding-right 2rem
 
 article
 	cf()
@@ -33,15 +48,20 @@ h1,h2,h3,h4,h5,h6
 h2
 	font-size 3rem
 	margin-top 0
+	margin-bottom 1.5rem
 	+below(phone)
 		font-size 2rem
 h3
-	margin-top 0
+	margin-top 2rem
+	margin-bottom 1rem
 	font-weight 600
 	font-size 1.4rem
 
 img
 	max-width 100%
+	&.center
+		display block
+		margin 0 auto
 
 button(color, colorDark)
 	display inline-block
@@ -68,3 +88,7 @@ button.main, .button.main
 
 *:focus
 	outline dark dotted thick
+
+
+section.main
+	background: main
