@@ -1,30 +1,18 @@
-Hemmalaget
-==========
+# Hemmalaget
 
-A static homepage for Hemmalaget AB.
-
-## Requirements
-
-Node.js, Npm
+Static site for Hemmalaget, built with Next.js and deployed on Github pages.
 
 ## Development
 
-After cloning the repository, you need to install all dependencies using:
+The development runtime is fully provided via [Docker](https://www.docker.com/).
 
-	npm install
+```bash
+# Launch the interactive shell with a node environment
+./shell.sh
 
-Now you can start a development server simply by running:
+# Install dependencies
+yarn
 
-	npm start
-
-The site uses brunch as a build tool. To start a reloading server (like with
-`npm start`), run
-
-	brunch watch --server
-
-To build assets for production, run
-
-	brunch build --production
-
-# Made by
-Daniel Ström [@dnjstrom](http://twitter.com/dnjstrom)
+# Launch development server
+yarn dev
+```
